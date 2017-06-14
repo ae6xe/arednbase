@@ -103,7 +103,7 @@ static const uint8_t md5_salt[16] = {
 
 
 /** Vendor information for CPE210/220/510/520 */
-static const char cpe510_vendor[] = "CPE510(TP-LINK|UN|N300-5):1.0\r\n";
+static const char cpe510_vendor[] = "(CPE510(TP-LINK|UN|N300-5|00000000):2.0\r\n";
 
 
 /**
@@ -133,13 +133,21 @@ static const struct flash_partition_entry cpe510_partitions[] = {
 static const char cpe510_support_list[] =
 	"SupportList:\r\n"
 	"CPE510(TP-LINK|UN|N300-5):1.0\r\n"
-	"CPE510(TP-LINK|UN|N300-5):1.1\r\n"
-	"CPE520(TP-LINK|UN|N300-5):1.0\r\n"
-	"CPE520(TP-LINK|UN|N300-5):1.1\r\n"
 	"CPE210(TP-LINK|UN|N300-2):1.0\r\n"
+	"CPE510(TP-LINK|UN|N300-5):1.1\r\n"
+	"CPE520(TP-LINK|UN|N300-5):1.1\r\n"
 	"CPE210(TP-LINK|UN|N300-2):1.1\r\n"
-	"CPE220(TP-LINK|UN|N300-2):1.0\r\n"
-	"CPE220(TP-LINK|UN|N300-2):1.1\r\n";
+	"CPE220(TP-LINK|UN|N300-2):1.1\r\n"
+	"CPE510(TP-LINK|US|N300-5):1.1\r\n"
+	"CPE520(TP-LINK|US|N300-5):1.1\r\n"
+	"CPE210(TP-LINK|US|N300-2):1.1\r\n"
+	"CPE220(TP-LINK|US|N300-2):1.1\r\n"
+	"CPE510(TP-LINK|EU|N300-5):1.1\r\n"
+	"CPE520(TP-LINK|EU|N300-5):1.1\r\n"
+	"CPE210(TP-LINK|EU|N300-2):1.1\r\n"
+	"CPE220(TP-LINK|EU|N300-2):1.1\r\n"
+	"CPE510(TP-LINK|CA|N300-5):1.1\r\n"
+	"CPE520(TP-LINK|CA|N300-5):1.1\r\n";
 
 #define error(_ret, _errno, _str, ...)				\
 	do {							\
